@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+    <title>Calculadora basica</title>
+</head>
+<body>
+    <div class="container-cal">
+        <h1>Calculadora basica</h1>
+        <div class="suma">
+            <h2>Suma</h2>
+            <input type="text" placeholder="primer numero" id="first-num-sum">
+            <input type="text" placeholder="segundo numero" id="secound-num-sum">
+            <div class="screen" id="screen-sum"></div>
+            <button id="sum">Sumar</button>
+            <button id="reset-sum" class="reset" onclick="Reset('sum')">Reiniciar</button>
+            <div class="separator"></div>
+        </div>
+
+        <div class="resta">
+            <h2>Resta</h2>
+            <input type="text" placeholder="primer numero" id="first-num-rest">
+            <input type="text" placeholder="segundo numero" id="secound-num-rest">
+            <div class="screen" id="screen-rest"></div>
+            <button id="rest">Restar</button>
+            <button id="reset-rest" class="reset" onclick="Reset('rest')">Reiniciar</button>
+            <div class="separator"></div>
+        </div>
+
+        <div class="multi">
+            <h2>Multiplicación</h2>
+            <input type="text" placeholder="primer numero" id="first-num-multi">
+            <input type="text" placeholder="segundo numero" id="secound-num-multi">
+            <div class="screen" id="screen-multi"></div>
+            <button id="multi">Multiplicar</button>
+            <button id="reset-multi" class="reset" onclick="Reset('multi')">Reiniciar</button>
+            <div class="separator"></div>
+        </div>
+
+        <div class="divicion">
+            <h2>División</h2>
+            <input type="text" placeholder="primer numero" id="first-num-divi">
+            <input type="text" placeholder="segundo numero" id="secound-num-divi">
+            <div class="screen" id="screen-divi"></div>
+            <button id="divi">Dividir</button>
+            <button id="reset-divi" class="reset" onclick="Reset('divi')">Reiniciar</button>
+            <div class="separator"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
